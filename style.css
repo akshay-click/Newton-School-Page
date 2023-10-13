@@ -17,7 +17,11 @@ header {
   padding: 3px 12px;
   /* height: 53px; */
 }
-summary {
+.hide {
+  display: none !important;
+}
+.programs button {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,15 +29,13 @@ summary {
   width: 200px;
   padding: 8px;
   color: rgb(88, 87, 87);
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.171);
   box-shadow: rgba(43, 48, 59, 0.12) 0px 1px 4px 0px;
   border-radius: 8px;
   font-size: 15px;
   cursor: pointer;
   list-style: none;
-}
-details {
-  position: relative;
 }
 .course-container {
   display: flex;
@@ -239,6 +241,11 @@ main {
 }
 .center-container::-webkit-scrollbar {
   display: none;
+}
+.centerStreak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .main-container {
   display: flex;
@@ -455,6 +462,48 @@ main {
     color: #007bff;
   }
 }
+#lectures {
+  border-top: 1px solid rgba(0, 0, 0, 0.171);
+}
+.lecture-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  cursor: default;
+}
+.lecture-item:hover {
+  background-color: rgba(119, 118, 118, 0.199);
+  .lecture-name {
+    color: #0466cf;
+  }
+}
+.lecture-name {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #393b3d;
+}
+.lectureBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 25px; */
+  padding: 6px 14px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 1px solid grey;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(10, 10, 10, 0.26);
+  cursor: pointer;
+}
+.lectureBtn:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
 .bottom {
   display: flex;
   justify-content: space-between;
@@ -511,7 +560,6 @@ main {
 .right-container {
   width: 328px;
   max-width: 328px;
-  /* max-height: calc(100vh - 53px); */
   border-left: 1px solid rgba(119, 118, 118, 0.199);
   overflow-y: auto;
 }
@@ -610,7 +658,7 @@ main {
   gap: 20px;
   padding: 10px;
 }
-.day:nth-child(2) .day-event:first-child {
+.day:nth-child(2) .dayEvent:first-child {
   border-bottom: 1px solid rgba(119, 118, 118, 0.199);
 }
 .date {
@@ -637,21 +685,21 @@ main {
 .date span:last-child {
   font-size: 13px;
 }
-.day-events {
+.dayEvents {
   flex-grow: 1;
 }
-.day-event {
+.dayEvent {
   padding: 10px;
 }
-.day-event p {
+.dayEvent p {
   padding-bottom: 6px;
 }
-.batch-name,
+.batchName,
 .timing {
   font-size: 12px;
   color: rgb(114, 114, 114);
 }
-.event-type {
+.eventType {
   font-size: 14px;
   font-weight: 550;
   color: rgb(77, 77, 77);
@@ -669,6 +717,9 @@ footer {
   bottom: 0;
 }
 @media (max-width: 440px) {
+  .center-container > div {
+    padding: 24px;
+  }
   .task-item {
     flex-direction: column;
     align-items: start;
@@ -733,5 +784,10 @@ footer {
   }
   .center-container {
     width: 100%;
+  }
+}
+@media (min-width: 1100px) {
+  .centerStreak {
+    display: none;
   }
 }

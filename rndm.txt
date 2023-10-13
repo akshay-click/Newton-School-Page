@@ -1,0 +1,79 @@
+
+                <div class="day">
+                  <div>
+                    <div class="date"><span>23</span><span>Sat</span></div>
+                  </div>
+                  <div class="dayEvents">
+                    <div class="dayEvent">
+                      <p class="batchName">FSD B - Jan 23</p>
+                      <p class="eventType">Lecture</p>
+                      <p class="timing">9:00 PM - 11:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="day">
+                  <div>
+                    <div class="date"><span>24</span><span>Sun</span></div>
+                  </div>
+                  <div class="dayEvents">
+                    <div class="dayEvent">
+                      <p class="batchName">FSD B - Jan 23</p>
+                      <p class="eventType">Contest</p>
+                      <p class="timing">6:00 PM - 8:00 PM</p>
+                    </div>
+                    <div class="dayEvent">
+                      <p class="batchName">FSD B - Jan 23</p>
+                      <p class="eventType">Lecture</p>
+                      <p class="timing">9:00 PM - 11:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="day">
+                  <div>
+                    <div class="date"><span>25</span><span>Mon</span></div>
+                  </div>
+                  <div class="dayEvents">
+                    <div class="dayEvent">
+                      <p class="batchName">Inst. 2 class</p>
+                      <p class="eventType">Lecture</p>
+                      <p class="timing">8:30 PM - 11:30 PM</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="day">
+                  <div>
+                    <div class="date"><span>26</span><span>Tue</span></div>
+                  </div>
+                  <div class="dayEvents">
+                    <div class="dayEvent">
+                      <p class="batchName">FSD B - Jan 23</p>
+                      <p class="eventType">Lecture</p>
+                      <p class="timing">9:00 PM - 11:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="day">
+                  <div>
+                    <div class="date"><span>28</span><span>Thu</span></div>
+                  </div>
+                  <div class="dayEvents">
+                    <div class="dayEvent">
+                      <p class="batchName">FSD B - Jan 23</p>
+                      <p class="eventType">Lecture</p>
+                      <p class="timing">9:00 PM - 11:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="day">
+                  <div>
+                    <div class="date"><span>29</span><span>Fri</span></div>
+                  </div>
+                  <div class="dayEvents">
+                    <div class="dayEvent">
+                      <p class="batchName">Inst. 2 class</p>
+                      <p class="eventType">Lecture</p>
+                      <p class="timing">8:30 PM - 11:30 PM</p>
+                    </div>
+                  </div>
+                </div>
+              
