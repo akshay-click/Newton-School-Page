@@ -247,6 +247,10 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.centerStreak > p {
+  font-size: 18px !important;
+  font-weight: bold;
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -489,7 +493,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 25px; */
   padding: 6px 14px;
   font-size: 15px;
   text-transform: uppercase;
@@ -500,6 +503,11 @@ main {
   cursor: pointer;
 }
 .lectureBtn:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+}
+.notWatchBtn {
   background-color: black;
   border: 1px solid black;
   color: white;
