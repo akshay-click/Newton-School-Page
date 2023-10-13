@@ -242,16 +242,18 @@ function activateLecturesBtn() {
 function makeStreaks() {
   const watchBtns = document.querySelectorAll(".watchBtn");
   const notWatchBtns = document.querySelectorAll(".notWatchBtn");
-  const lectureStreak = document.getElementById("lecture-streak");
+  const lectureStreaks = document.querySelectorAll("#lecture-streak");
   const lecturePercentage = document.getElementById("lecturePercentage");
   const lectureScore = document.getElementById("lectureScore");
-  let streak = Number(lectureStreak.innerText);
+  let streak = Number(lectureStreaks[0].innerText);
   watchBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       streak++;
       lecturePercentage.innerText = (streak / 5) * 100 + "%";
       lectureScore.innerText = `${streak}/5`;
-      lectureStreak.innerText = streak;
+      lectureStreaks.forEach((st) => {
+        st.innerText = streak;
+      });
       btn.classList.add("hide");
       let notWatchBtn = e.target.nextElementSibling;
       notWatchBtn.classList.remove("hide");
@@ -262,7 +264,9 @@ function makeStreaks() {
       streak--;
       lecturePercentage.innerText = (streak / 5) * 100 + "%";
       lectureScore.innerText = `${streak}/5`;
-      lectureStreak.innerText = streak;
+      lectureStreaks.forEach((st) => {
+        st.innerText = streak;
+      });
       btn.classList.add("hide");
       let watchBtn = e.target.previousElementSibling;
       watchBtn.classList.remove("hide");
