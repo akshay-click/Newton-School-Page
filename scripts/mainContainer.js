@@ -202,8 +202,8 @@ function createLecturesContainer() {
 }
 function createLectureBtn() {
   let p = document.createElement("p");
-  let watchedBtn = createWatchedBtn(p);
-  let notWatchedBtn = createNotWatchedBtn(p);
+  let watchedBtn = createWatchedBtn();
+  let notWatchedBtn = createNotWatchedBtn();
   p.append(watchedBtn, notWatchedBtn);
   return p;
 }
@@ -223,19 +223,17 @@ function activateLecturesBtn() {
   const lectureBtnTab = document.querySelector(".lecturesBtn");
   lectureBtnTab.setAttribute("href", "#");
   const lectureBtns = document.querySelectorAll(".lecturesBtn");
+  const tasks = document.querySelector(".tasks");
+  const lectures = document.getElementById("lectures");
   lectureBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const tasks = document.querySelector(".tasks");
       tasks.classList.add("hide");
-      const lectures = document.getElementById("lectures");
       lectures.classList.remove("hide");
     });
   });
   const all = document.querySelector(".allBtn");
   all.addEventListener("click", () => {
-    const tasks = document.querySelector(".tasks");
     tasks.classList.remove("hide");
-    const lectures = document.getElementById("lectures");
     lectures.classList.add("hide");
   });
 }
